@@ -5,6 +5,8 @@
   "main": "electron/electron.js",
   "license": "MIT",
   "extends": null,
+  "engines" : { "node" : "8" },
+  "engineStrict" : true,
   "homepage": "./",
   "build": {
     "appId": "com.example.electron-cra",
