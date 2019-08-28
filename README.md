@@ -10,6 +10,14 @@ _This project use yarn_
 2. `yarn`
 3. `yarn run dev`
 
+
+# problems with node-gyp:
+
+rm -rf package-lock.json
+rm -rf node_modules
+rm -rf ~/.node-gyp
+yarn install
+
 ## Contribuitors
 
 - [Gustavo Freire](https://github.com/gustavoFreireS)

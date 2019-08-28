@@ -1,5 +1,9 @@
-var HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
+	externals: [
+		require('webpack-node-externals')()
+	],
 	module: {
 		rules: [
 			{
@@ -10,7 +14,7 @@ module.exports = {
 				}
 			},
 			{
-				test: /\.scss$/,
+				test: /\.(scss|css)$/,
 				use: ["style-loader", "css-loader", "sass-loader"]
 			},
 			{
